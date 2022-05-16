@@ -1,17 +1,24 @@
 ---
 layout: home
-
+# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: id_home
 
+# image for page specific usage
 img: ":aluminium-composite-panel.avif"
-
+# publish date (used for seo)
+# if not specified, site.time will be used.
 date: 2022-04-30 02:59 +0330
 
+# for override items in _data/lang/[language].yml
 title: قیمت | ورق کامپوزیت | 09122448082
+#button_name: "My button"
+# for override side_and_top_nav_buttons in _data/conf/main.yml
+#icon: "fa fa-bath"
 
-
+# seo
+# if not specified, date will be used.
 meta_modify_date: 2022-03-03 12:32:00 +0330
-
+# check the meta_common_description in _data/lang/[language].yml
 meta_description: "قیمت نمای کامپوزیت | لیست قیمت اجرای هر متر مربع نمای کامپوزیت مغازه | ویلایی | نمای کامپوزیت ساختمان مسکونی | ورق کامپوزیت | در تهران و اصفهان"
 image_viewer_on: true
 image_lazy_loader_on: true
@@ -30,13 +37,13 @@ image_lazy_loader_on: true
 ---
 / فهرست مطالب /
  <!-- TOC start -->
-  - [قیمت نمای کامپوزیت | اجرای نمای کامپوزیت](#قیمت-نمای-کامپوزیت--اجرای-نمای-کامپوزیت)
-  - [قیمت اجرای هر متر مربع نمای کامپوزیت](#قیمت-اجرای-هر-متر-مربع-نمای-کامپوزیت)
-  - [قیمت ورق کامپوزیت طرح سنگ](#قیمت-ورق-کامپوزیت-طرح-سنگ)
-  - [قیمت ورق کامپوزیت ارزان](#قیمت-ورق-کامپوزیت-ارزان)
-  - [نمای کامپوزیت طرح چوب](#نمای-کامپوزیت-طرح-چوب)
-  - [معایب نمای کامپوزیت](#معایب-نمای-کامپوزیت)
-  - [اجرای کامپوزیت نما](#اجرای-کامپوزیت-نما)
+- [قیمت نمای کامپوزیت](#قیمت_نمای_کامپوزیت)
+- [قیمت اجرای هر متر مربع نمای کامپوزیت](#قیمت_اجرای_هر_متر_مربع_نمای_کامپوزیت)
+- [قیمت ورق کامپوزیت طرح سنگ](#قیمت_ورق_کامپوزیت_طرح_سنگ)
+- [قیمت ورق کامپوزیت ارزان](#قیمت_ورق_کامپوزیت_ارزان)
+- [نمای کامپوزیت طرح چوب](#نمای_کامپوزیت_طرح_چوب)
+- [معایب نمای کامپوزیت](#معایب_نمای_کامپوزیت)
+- [اجرای کامپوزیت نما](#اجرای_کامپوزیت_نما)
 <!-- TOC end -->
 
 <!-- TOC --><a name="قیمت_نمای_کامپوزیت"></a>
