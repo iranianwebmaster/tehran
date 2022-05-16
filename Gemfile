@@ -29,5 +29,5 @@ gem "webrick", "~> 1.7"
 
 gem 'jekyll-compose', group: [:jekyll_plugins]
 gem 'jekyll-sitemap'
-gem 'jekyll-paginate'
+gem "jekyll-paginate", "~> 1.1.0"
 gem 'jekyll-toc'
