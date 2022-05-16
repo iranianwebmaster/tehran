@@ -5,7 +5,7 @@ layout: default
 {%- assign lng = get_lng -%}
 {%- include post_common/post-main.html post = page -%}
 {% if page.faq %}
-{% include faq-schema-content.html %}
+{% include accordion.html %}
 {% endif %}
 {%-comment-%} Pagination {%-endcomment-%}
 {% if site.posts.size > 1 -%}

@@ -17,7 +17,6 @@ layout: default
     {{ content }}
   </div>
 </div>
-
 {%- if lng_pages.size > 0 and site.data.conf.others.home.new_posts %}
 <div class="multipurpose-container new-posts-container">
   <div>{{ site.data.lang[lng].home.new_posts_title }}</div>
@@ -38,7 +37,6 @@ layout: default
   </ul>
 </div>
 {% endif -%}
-
 {%- if site.data.conf.posts.post_table_of_contents_tooltip -%}
   {%- capture tooltip_move -%} data-toggle="tooltip" data-placement="top" title="{{ site.data.lang[lng].post.table_of_contents.tooltip.move }}" {%- endcapture %}
   {%- capture tooltip_close -%} data-toggle="tooltip" data-placement="bottom" title="{{ site.data.lang[lng].post.table_of_contents.tooltip.close }}" {%- endcapture %}
