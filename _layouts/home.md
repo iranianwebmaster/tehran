@@ -17,6 +17,9 @@ layout: default
     {{ content }}
   </div>
 </div>
+{% if page.faq %}
+{% include accordion.html %}
+{% endif %}
 {%- if lng_pages.size > 0 and site.data.conf.others.home.new_posts %}
 <div class="multipurpose-container new-posts-container">
   <div>{{ site.data.lang[lng].home.new_posts_title }}</div>
