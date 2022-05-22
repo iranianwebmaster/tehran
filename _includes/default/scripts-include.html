@@ -1542,8 +1542,8 @@
     ;
     var F = S.Deferred();
     function B() {
-        E.removeEventListener("DOMContentLoaded", B),
-        C.removeEventListener("load", B),
+        E.removeEventListener("DOMContentLoaded", B, {passive: true}),
+        C.removeEventListener("load", B, {passive: true}),
         S.ready()
     }
     S.fn.ready = function(e) {
@@ -1561,8 +1561,8 @@
         }
     }),
     S.ready.then = F.then,
-    "complete" === E.readyState || "loading" !== E.readyState && !E.documentElement.doScroll ? C.setTimeout(S.ready) : (E.addEventListener("DOMContentLoaded", B),
-    C.addEventListener("load", B));
+    "complete" === E.readyState || "loading" !== E.readyState && !E.documentElement.doScroll ? C.setTimeout(S.ready) : (E.addEventListener("DOMContentLoaded", B, {passive: true}),
+    C.addEventListener("load", B, {passive: true}));
     var $ = function(e, t, n, r, i, o, a) {
         var s = 0
           , u = e.length
@@ -2142,7 +2142,7 @@
         }
     },
     S.removeEvent = function(e, t, n) {
-        e.removeEventListener && e.removeEventListener(t, n)
+        e.removeEventListener && e.removeEventListener(t, n, {passive: true})
     }
     ,
     S.Event = function(e, t) {
@@ -3437,13 +3437,13 @@
             setup: function() {
                 var e = this.ownerDocument || this.document || this
                   , t = Y.access(e, r);
-                t || e.addEventListener(n, i, !0),
+                t || e.addEventListener(n, i, !0, {passive: true}),
                 Y.access(e, r, (t || 0) + 1)
             },
             teardown: function() {
                 var e = this.ownerDocument || this.document || this
                   , t = Y.access(e, r) - 1;
-                t ? Y.access(e, r, t) : (e.removeEventListener(n, i, !0),
+                t ? Y.access(e, r, t) : (e.removeEventListener(n, i, !0, {passive: true}),
                 Y.remove(e, r))
             }
         }
