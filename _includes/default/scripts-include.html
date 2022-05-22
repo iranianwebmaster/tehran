@@ -5772,7 +5772,7 @@ if ("undefined" == typeof jQuery)
             return;
         const colorSetting = localStorage.getItem(colorScheme.storageKey) || document.body.getAttribute(colorScheme.modeAttr);
         checkBox.checked = ((colorSetting == null) || (colorSetting == colorScheme.mode.light)) ? false : true;
-        checkBox.addEventListener("change", switchToTheme);
+        checkBox.addEventListener("change", switchToTheme, {passive: true});
     }
     function switchToTheme(e) {
         const colorSetting = e.target.checked ? colorScheme.mode.dark : colorScheme.mode.light;
@@ -5796,7 +5796,7 @@ if ("undefined" == typeof jQuery)
         switches.forEach(themeToSwitch);
     }
     var switches;
-    document.addEventListener("DOMContentLoaded", initColorSchemeSwitch);
+    document.addEventListener("DOMContentLoaded", initColorSchemeSwitch, {passive: true});
 }
 )();
 (function() {
@@ -5834,7 +5834,7 @@ if ("undefined" == typeof jQuery)
             }
         }
     }
-    topNavToggleElement.addEventListener('click', ToggleShowHide);
+    topNavToggleElement.addEventListener('click', ToggleShowHide, {passive: true});
     window.addEventListener('click', function(e) {
         let outsideClicked = (sideNavElement.contains(e.target) == false);
         let sideNavOn = parseInt(window.getComputedStyle(sideNavElement).getPropertyValue('left')) == 0 ? true : false;
@@ -5844,7 +5844,7 @@ if ("undefined" == typeof jQuery)
         }
     });
     if (closeButton) {
-        closeButton.addEventListener('click', ToggleShowHide);
+        closeButton.addEventListener('click', ToggleShowHide, {passive: true});
     }
     window.addEventListener('resize', function(e) {
         sideNavElement.style.removeProperty('left');
@@ -5978,7 +5978,7 @@ if ("undefined" == typeof jQuery)
     function setCloseCallBack(id, callBack) {
         let msgBoxElement = getMsgBoxElement(id);
         let closeButton = msgBoxElement.getElementsByClassName(globals.msgBoxCloseClass)[0];
-        closeButton.addEventListener('click', callBack);
+        closeButton.addEventListener('click', callBack, {passive: true});
     }
     function show(id) {
         let msgBoxElement = getMsgBoxElement(id);
@@ -6276,7 +6276,7 @@ if ("undefined" == typeof jQuery)
         SlidingMsgBox.init(slidingBoxId, globals.consentSettingHtml, hideSettings);
         showConsentBar();
     }
-    document.addEventListener("DOMContentLoaded", initConsent);
+    document.addEventListener("DOMContentLoaded", initConsent, {passive: true});
     (function(window) {
         window.CookieConsent = globals;
     }
@@ -6419,10 +6419,10 @@ function copyToClipboard(text, success_msg) {
     function touchEventToMouseEventInit(panel) {
         if (panel == null)
             return;
-        panel.addEventListener("touchstart", touchEventToMouseEvent);
-        panel.addEventListener("touchmove", touchEventToMouseEvent);
-        panel.addEventListener("touchend", touchEventToMouseEvent);
-        panel.addEventListener("touchcancel", touchEventToMouseEvent);
+        panel.addEventListener("touchstart", touchEventToMouseEvent, {passive: true});
+        panel.addEventListener("touchmove", touchEventToMouseEvent, {passive: true});
+        panel.addEventListener("touchend", touchEventToMouseEvent, {passive: true});
+        panel.addEventListener("touchcancel", touchEventToMouseEvent, {passive: true});
     }
     function movablePanelsInit() {
         let panel_list = document.querySelectorAll(panelSelector);
@@ -6436,7 +6436,7 @@ function copyToClipboard(text, success_msg) {
             mouseEventInit(panel, panel.querySelector(panelHeaderSelector));
         });
     }
-    document.addEventListener("DOMContentLoaded", movablePanelsInit);
+    document.addEventListener("DOMContentLoaded", movablePanelsInit, {passive: true});
 }
 )();
 (function() {
