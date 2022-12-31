@@ -1,7 +1,16 @@
----
-layout: json/post-query
+[
+    {
+    "title"     : "ما هي واجهة الألومنيوم المركبة؟"
+    ,"title_sub": "تست"
+    ,"category" : "ar-acp-article"
+    ,"tags"     : "نمای کامپوزیت"
+    ,"url"      : "/ar/2022-04-30-composite-panel"
+    ,"image"    : "/assets/img/posts/aluminium-composite-sheet-price.avif"
+    ,"max_width": ""
+    ,"display"  : ""
+    ,"read_time": "1 min read"
+    ,"date"     : "Apr 29, 2022"
+    ,"year"     : "2022"
+    }
+  ]
 
-# optional
-# to disable this page, simply set published: false or delete this file
-#published: false
----
