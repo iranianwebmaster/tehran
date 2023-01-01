@@ -1,16 +1,7 @@
-[
-    {
-    "title"     : "What is the aluminium composite facade?"
-    ,"title_sub": "test"
-    ,"category" : "acp-article"
-    ,"tags"     : "aluminium composite panel"
-    ,"url"      : "/en/2022-04-30-composite-panel"
-    ,"image"    : "/assets/img/posts/aluminium-composite-sheet-price.avif"
-    ,"max_width": ""
-    ,"display"  : ""
-    ,"read_time": "1 min read"
-    ,"date"     : "Apr 29, 2022"
-    ,"year"     : "2022"
-    }
-  ]
+---
+layout: json/post-query
 
+# optional
+# to disable this page, simply set published: false or delete this file
+#published: false
+---
